@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}blog article{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>{{ article.title }}</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+        <p class="text-center"><span>{{    article.author.username    }}</span>
+            <span style="margin-left: 20px">{{ publish }}</span></p>
+        <div>{{ article.body }}</div>
+    </div>
+    <div class="col-xs-6 col-md-4">
+        <h2>Advertising</h2>
+        <p>from learn to laoqi: www.itdiffer.com</p>
+        <img width="200px" src="https://b244.photo.store.qq.com/psb?/V14ObrhL2MY2gB/h*dDAHiKbAAHHZNLyMKcg58c7aG.lpqTU0xMDeftAAQ!/m/dPQAAAAAAAAAnull&bo=8ADwAAAAAAACByM!&rf=photolist&t=5">
+    </div>
+</div>
+{% endblock %}
+<!--http://www.mrwallpaper.com/wallpapers/Fluffy-Cat.jpg>
